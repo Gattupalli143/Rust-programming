@@ -1,0 +1,11 @@
+const MAX_SCORE: u32 = 100;
+const PI: f64 = 3.14159;
+const GREETING: &str = "Hello, Rust!";
+const FLAG: bool = true;
+
+fn main() {
+    println!("MAX_SCORE = {}", MAX_SCORE);
+    println!("PI = {}", PI);
+    println!("GREETING = {}", GREETING);
+    println!("FLAG = {}", FLAG);
+}
