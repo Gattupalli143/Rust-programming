@@ -1,0 +1,7 @@
+fn main() {
+    let x = 42;
+    let y: f64 = 3.14;
+
+    println!("Implicitly typed x = {}", x);
+    println!("Explicitly typed y = {}", y);
+}
