@@ -1,0 +1,12 @@
+fn find_and_concatenate_c_words(input: &str) -> String {
+    input
+        .split_whitespace()
+        .filter(|word| word.starts_with('c') || word.starts_with('C'))
+        .collect::<String>()
+}
+
+fn main() {
+    let text = "Cats can climb cliffs and chase creatures";
+    let result = find_and_concatenate_c_words(text);
+    println!("{}", result);
+}
