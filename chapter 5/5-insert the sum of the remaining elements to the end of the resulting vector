@@ -1,0 +1,14 @@
+fn process_vector(mut v: Vec<i32>) -> Vec<i32> {
+    v.pop();
+    let mid = v.len() / 2;
+    v.remove(mid);
+    let sum: i32 = v.iter().sum();
+    v.push(sum);
+    v
+}
+
+fn main() {
+    let v = vec![1, 2, 3, 4, 5, 6];
+    let result = process_vector(v);
+    println!("{:?}", result);
+}
