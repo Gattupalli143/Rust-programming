@@ -1,0 +1,7 @@
+fn main() {
+    let text = "Rust is fast and memory-efficient";
+    let tokens = text.split_whitespace();
+    for token in tokens {
+        println!("{}", token);
+    }
+}
