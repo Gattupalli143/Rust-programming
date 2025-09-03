@@ -1,0 +1,23 @@
+use std::f64;
+
+struct Point {
+    x: f64,
+    y: f64,
+}
+
+fn calculate_distance(p1: Point, p2: Point) -> f64 {
+    let dx = p2.x - p1.x;
+    let dy = p2.y - p1.y;
+    (dx * dx + dy * dy).sqrt()
+}
+
+fn test() -> f64 {
+    let point1 = Point { x: 3.0, y: 4.0 };
+    let point2 = Point { x: 7.0, y: 1.0 };
+    calculate_distance(point1, point2)
+}
+
+fn main() {
+    let distance = test();
+    println!("Distance between the two points is: {}", distance);
+}
