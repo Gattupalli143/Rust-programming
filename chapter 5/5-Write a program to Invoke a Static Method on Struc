@@ -1,0 +1,11 @@
+struct Struc;
+
+impl Struc {
+    fn static_method() {
+        println!("Static method called");
+    }
+}
+
+fn main() {
+    Struc::static_method();
+}
